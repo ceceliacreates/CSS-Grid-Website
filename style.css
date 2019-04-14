@@ -50,8 +50,8 @@ table {
 /* The grid container */
 .grid-container {
     display: grid;
-    grid-template-rows: 20% 1fr 1fr 1fr 1fr 1fr 10%;
-    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr 1fr 5%;
+    grid-template-columns: 10% 1fr 1fr 1fr;
     grid-template-areas:
     'header header header header'
     'nav content content sidebar'
@@ -64,28 +64,28 @@ table {
   } 
 /*setting grid areas for grid items*/
   .header {
-      grid-area: 1 span 4 / 1;
+      grid-area: 1 / 1 / 2 / span 4;
   }
   .nav {
-      grid-area: 2 span 5 / 1;
+      grid-area: 2 / 1 /span 5 / 2;
   }
   .content {
-      grid-area: 2 span 3 / 2 span 2;
+      grid-area: 2 / 2 / span 3 / span 2;
   }
   .sidebar {
-      grid-area: 2 span 3 / 4;
+      grid-area: 2 / 4 / span 3 / 5;
   }
   .feature1 {
-      grid-area: 5 span 2 / 2;
+      grid-area: 5 / 2 / span 2 / 3;
   }
   .feature2 {
-      grid-area: 5 span 2 / 3;
+      grid-area: 5 / 3 / span 2 / 4;
   }
   .feature3 {
-      grid-area: 5 span 2 / 4;
+      grid-area: 5 / 4 / span 2 / 5;
   }
   .footer {
-      grid-area: 7 / 1 span 4;
+      grid-area: 7 / 1 / 8 / span 4;
   }
 /*styling for grid items*/
 .header, .nav, .content, .sidebar, .feature1, .feature2, .feature3, .footer {
